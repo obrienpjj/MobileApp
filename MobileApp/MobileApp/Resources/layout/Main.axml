@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <Button
+      android:layout_width="match_parent"
+      android:layout_weight="20"
+      android:layout_height="0dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:text="Play"
+      android:textAllCaps="false"
+      android:textStyle="italic"
+      android:textSize="20sp"
+      android:id="@+id/btnPlay" />
+  <SeekBar
+      android:layout_width="match_parent"
+      android:max="3"
+      android:layout_weight="20"
+      android:layout_height="0dp"
+      android:id="@+id/seekBar" />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_weight="20"
+      android:layout_height="0dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:text="Easy"
+      android:textAllCaps="false"
+      android:textStyle="italic"
+      android:textSize="20sp"
+      android:id="@+id/txtMode" />
+  <Button
+      android:layout_width="match_parent"
+      android:layout_weight="20"
+      android:layout_height="0dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:text="Previous Scores"
+      android:textAllCaps="false"
+      android:textStyle="italic"
+      android:textSize="20sp"
+      android:id="@+id/btnScore" />
+</LinearLayout>
