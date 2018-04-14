@@ -33,6 +33,20 @@ namespace MobileApp
             btnScore = FindViewById<Button>(Resource.Id.btnScore);
 
             seekBar.SetOnSeekBarChangeListener(this);
+
+            btnPlay.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(PlayActivity));
+                intent.PutExtra("MODE", getPlayMode());
+                StartActivity(intent);
+                Finish();
+            };
+            btnScore.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(ScoreActivity));
+                StartActivity(intent);
+                Finish();
+            };
         }
 
         private String getPlayMode()

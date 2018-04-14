@@ -9,18 +9,21 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using SQLite;
 
 namespace MobileApp.Model
 {
+    [Table("Question")]
     class Question
     {
-        private int ID { get; set; }
-        private string Country { get; set; }
-        private string AnswerA { get; set; }
-        private string AnswerB { get; set; }
-        private string AnswerC { get; set; }
-        private string AnswerD { get; set; }
-        private string CorrectAnswer { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
+        public string Country { get; set; }
+        public string AnswerA { get; set; }
+        public string AnswerB { get; set; }
+        public string AnswerC { get; set; }
+        public string AnswerD { get; set; }
+        public string CorrectAnswer { get; set; }
 
         public Question() { }
 

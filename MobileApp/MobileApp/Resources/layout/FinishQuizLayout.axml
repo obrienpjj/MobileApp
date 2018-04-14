@@ -4,43 +4,33 @@
     android:weightSum="100"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:layout_width="match_parent"
-        android:layout_weight="20"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Play"
-        android:textAllCaps="false"
-        android:textStyle="italic"
-        android:textSize="20sp"
-        android:id="@+id/btnPlay" />
-    <SeekBar
-        android:layout_width="match_parent"
-        android:max="3"
-        android:layout_weight="20"
-        android:layout_height="0dp"
-        android:id="@+id/seekBar" />
     <TextView
+        android:layout_height="0dp"
         android:layout_width="match_parent"
         android:layout_weight="20"
-        android:layout_height="0dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Easy"
+        android:text="1/30"
         android:textAllCaps="false"
         android:textStyle="italic"
         android:textSize="20sp"
-        android:id="@+id/txtMode" />
+        android:id="@+id/txtTotalScore" />
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:text="Score"
+        android:textAllCaps="false"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:id="@+id/txtTotalQuestion" />
     <Button
         android:layout_width="match_parent"
-        android:layout_weight="20"
+        android:layout_weight="10"
         android:layout_height="0dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:text="Previous Scores"
+        android:text="Try Again"
         android:textAllCaps="false"
         android:textStyle="italic"
         android:textSize="20sp"
-        android:id="@+id/btnScore" />
+        android:id="@+id/btnTryAgain" />
 </LinearLayout>
