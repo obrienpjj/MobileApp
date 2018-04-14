@@ -14,10 +14,10 @@ namespace MobileApp.Common
 {
     public class Common
     {
-        public const int EASY_MODE_NUM = 30;
-        public const int MEDIUM_MODE_NUM = 50;
-        public const int HARD_MODE_NUM = 100;
-        public const int INSANE_MODE_NUM = 200;
+        public const int EASY_MODE_NUM = 20;
+        public const int MEDIUM_MODE_NUM = 30;
+        public const int HARD_MODE_NUM = 40;
+        public const int INSANE_MODE_NUM = 50;
 
         public enum MODE
         {
